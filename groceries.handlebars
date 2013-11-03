@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>
+         Please state your product and price. For example Potatoes twenty ringgit.
+		 Press star to go back to list of expenses.
+		 End call if you are done.
+    </Say>
+	
+    <Record
+        transcribeCallback="http://drew.pagekite.me/groceries"
+        method="GET"
+        maxLength="20"
+        finishOnKey="*"
+		transcribe="true"
+		action="http://drew.pagekite.me/groceries"
+		playBeep="true"
+        />
+    <Say>I did not receive a recording</Say>
+</Response>

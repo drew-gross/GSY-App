@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>
+        Where are you residing currently? Please state after the beep.
+    </Say>
+	
+    <Record
+        transcribeCallback="http://drew.pagekite.me/location"
+        method="POST"
+        maxLength="20"
+        finishOnKey="*"
+		transcribe="true"
+		action="http://drew.pagekite.me/location"
+		playBeep="true"
+        />
+    <Say>I did not receive a recording</Say>
+</Response>

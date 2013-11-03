@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "moment": {},
+    "router": {},
+    "twilio-meteor": {},
+    "npm": {},
+    "handlebars-server": {}
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>
+        Please state the gender and age of your family members after beep.
+    </Say>
+    <Record
+        transcribeCallback="http://drew.pagekite.me/age_and_sex"
+        method="POST"
+        maxLength="20"
+        finishOnKey="*"
+		transcribe="true"
+		action="http://drew.pagekite.me/age_and_sex"
+        />
+    <Say>I did not receive a recording</Say>
+</Response>
